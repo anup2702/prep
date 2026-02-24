@@ -1,0 +1,102 @@
+.resume-preview {
+  padding: 2rem;
+  background: #fff;
+  color: #1e293b;
+  font-family: Georgia, serif;
+  font-size: 11px;
+  max-width: 700px;
+  min-height: 400px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.resume-preview header {
+  border-bottom: 2px solid #0f172a;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.resume-preview h1 {
+  margin: 0 0 0.35rem;
+  font-size: 1.5rem;
+}
+
+.resume-preview .contact {
+  display: flex;
+  gap: 1rem;
+  color: #64748b;
+  font-size: 10px;
+}
+
+.resume-preview section {
+  margin-bottom: 1rem;
+}
+
+.resume-preview section h2 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #475569;
+  margin: 0 0 0.5rem;
+}
+
+.resume-preview section p {
+  margin: 0 0 0.5rem;
+  line-height: 1.4;
+}
+
+.resume-preview .entry {
+  margin-bottom: 0.75rem;
+}
+
+.resume-preview .entry-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.resume-preview .dates {
+  font-size: 0.9em;
+  color: #64748b;
+}
+
+.resume-preview .skills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.resume-preview .skill-tag {
+  background: #f1f5f9;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+/* Modern template */
+.resume-modern header {
+  border-bottom-color: #0284c7;
+}
+
+.resume-modern section h2 {
+  color: #0284c7;
+}
+
+/* Classic template */
+.resume-classic {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.resume-classic header {
+  border-bottom-style: double;
+  border-bottom-width: 3px;
+}
+
+/* Minimal template */
+.resume-minimal header {
+  border-bottom: 1px solid #cbd5e1;
+}
+
+.resume-minimal section h2 {
+  font-weight: 600;
+  text-transform: none;
+}

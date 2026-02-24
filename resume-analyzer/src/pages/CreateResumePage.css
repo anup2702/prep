@@ -1,0 +1,201 @@
+.create-resume-page {
+  min-height: 100vh;
+  background: linear-gradient(160deg, var(--bg-primary) 0%, var(--bg-secondary) 50%, var(--bg-primary) 100%);
+  color: var(--text-primary);
+}
+
+.create-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.create-nav .logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.create-nav .nav-links {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+}
+
+.create-nav .nav-links a {
+  color: var(--text-secondary);
+}
+
+.create-nav .nav-links a:hover {
+  color: var(--accent);
+}
+
+.create-main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.create-main h1 {
+  font-size: 1.75rem;
+  margin-bottom: 0.35rem;
+}
+
+.create-subtitle {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.template-selector {
+  margin-bottom: 2rem;
+}
+
+.template-selector h3 {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.template-options {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.template-btn {
+  padding: 0.75rem 1.25rem;
+  background: var(--bg-card);
+  border: 2px solid var(--border-subtle);
+  border-radius: 10px;
+  color: var(--text-primary);
+  cursor: pointer;
+  text-align: left;
+  transition: border-color 0.2s;
+}
+
+.template-btn:hover {
+  border-color: var(--accent);
+}
+
+.template-btn.active {
+  border-color: var(--accent);
+  background: rgba(56, 189, 248, 0.1);
+}
+
+.template-name {
+  display: block;
+  font-weight: 600;
+}
+
+.template-desc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.builder-layout {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .builder-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.builder-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-section {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem;
+}
+
+.form-section h3 {
+  font-size: 0.95rem;
+  margin: 0 0 1rem;
+}
+
+.form-section input,
+.form-section textarea {
+  display: block;
+  width: 100%;
+  padding: 0.6rem 0.75rem;
+  margin-bottom: 0.6rem;
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: inherit;
+}
+
+.form-section input:last-of-type,
+.form-section textarea:last-of-type {
+  margin-bottom: 0;
+}
+
+.form-section textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.form-group:last-of-type {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.btn-add {
+  margin-top: 0.5rem;
+  padding: 0.5rem 0;
+  background: transparent;
+  border: none;
+  color: var(--accent);
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.btn-add:hover {
+  text-decoration: underline;
+}
+
+.builder-preview {
+  position: sticky;
+  top: 1rem;
+}
+
+.builder-preview .btn-download {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--accent);
+  color: var(--bg-primary);
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.builder-preview .btn-download:hover {
+  background: var(--accent-hover);
+}
+
+.export-hint {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
